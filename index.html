@@ -110,14 +110,12 @@
 
     <!-- Tabs -->
     <section class="col-four nav">
-        <div><button class="btn-nav active-btn" id="ootdTab" onclick="navChange(event,'ootd')">#HappyWomen'sDay <br>5th
-                March to 11th March</button></div>
-        <div><button class="btn-nav " id="foodieTab" onclick="navChange(event,'foodie')">#HBDAtifAslam <br>12th March to
-                18th March</button></div>
+        <div><button class="btn-nav active-btn" id="ootdTab" onclick="navChange(event,'ootd')">#Ramzan<br>3rd  April to 9th April </button></div>
+        <div><button class="btn-nav " id="foodieTab" onclick="navChange(event,'foodie')">#MeethiEid2024<br>10th April to 16th April</button></div>
         <div><button class="btn-nav " id="streamkarcolTab" onclick="navChange(event,'streamkarcol')">
-                #Colorfest<br>19th March to 25th March</button></div>
+                #OddlySatisfying<br>17th April to 23rd April</button></div>
         <div><button class="btn-nav" id="travelphotographyTab"
-                onclick="navChange(event,'travelphotography')">#Easter2024<br>26th March to 1st April</button></div>
+                onclick="navChange(event,'travelphotography')">#HBDVarunDhawan<br>24th April to 30th April</button></div>
     </section>
     <!-- End Tabs -->
 
@@ -355,10 +353,10 @@
         //todayDate = 29;
         console.log("Today is " + todayDate);
 
-        if (todayDate <= 11 && m == 3) {
+        if (todayDate <= 9 && m == 4) {
             navChange(event, "ootd");
-            topicId = '864127';
-            topicTitle = "#HappyWomen'sDay";
+            topicId = '864527';
+            topicTitle = "#Ramzan";
             //  window.phone._customActivity(window.phone.ACTIVITIES.TOPICACTIVITY, ['topicId', 'topicTitle'], ['828836', '#FlowerDay']);
             $('#header_pic').attr('src', 'img/1.png');
             $('#ootdTab').addClass("active-btn");
@@ -367,8 +365,8 @@
             $('#travelphotographyTab').prop('disabled', 'disabled');
             $('#simple_timer').syotimer({
                 year: 2024,
-                month: 3,
-                day: 11,
+                month: 4,
+                day: 9,
                 hour: 25,
                 minute: 0,
                 timeZone: 1
@@ -376,51 +374,51 @@
             });
 
         } else
-            if (todayDate >= 12 && todayDate <= 18 && m == 3) {
+            if (todayDate >= 10 && todayDate <= 16 && m == 4) {
 
                 navChange(event, "foodie");
-                topicId = '864128';
-                topicTitle = "#HBDAtifAslam";
+                topicId = '864528';
+                topicTitle = "#MeethiEid2024";
                 $('#header_pic').attr('src', 'img/2.png');
                 $('#foodieTab').addClass("active-btn");
                 $('#streamkarcolTab').prop('disabled', 'disabled');
                 $('#travelphotographyTab').prop('disabled', 'disabled');
                 $('#simple_timer').syotimer({
                     year: 2024,
-                    month: 3,
-                    day: 18,
+                    month: 4,
+                    day: 16,
                     hour: 25,
                     minute: 0,
                     timeZone: 1
 
                 });
-            } else if (todayDate >= 19 && todayDate <= 25 && m == 3) {
+            } else if (todayDate >= 17 && todayDate <= 23 && m == 4) {
                 navChange(event, 'streamkarcol')
-                topicId = '864129';
-                topicTitle = "#Colorfest";
+                topicId = '864529';
+                topicTitle = "#OddlySatisfying";
                 $('#header_pic').attr('src', 'img/3.png');
                 $('#streamkarcolTab').addClass("active-btn");
                 $('#travelphotographyTab').prop('disabled', 'disabled');
                 $('#simple_timer').syotimer({
                     year: 2024,
-                    month: 3,
-                    day: 25,
+                    month: 4,
+                    day: 23,
                     hour: 25,
                     minute: 0,
                     timeZone: 1
 
                 });
             }
-            else if ((todayDate >= 26 && m == 3) || (todayDate === 1 && m == 4)) {
+            else if (todayDate >= 24 && todayDate <= 30 && m == 4) {
                 navChange(event, 'travelphotography')
                 topicId = '864130';
-                topicTitle = "#Easter2024";
+                topicTitle = "#HBDVarunDhawan";
                 $('#header_pic').attr('src', 'img/4.png');
                 $('#travelphotographyTab').addClass("active-btn");
                 $('#simple_timer').syotimer({
                     year: 2024,
                     month: 4,
-                    day: 1,
+                    day: 30,
                     hour: 25,
                     minute: 0,
                     timeZone: 1
